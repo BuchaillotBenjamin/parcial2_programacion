@@ -1,9 +1,10 @@
+/* generales */
 * {
     margin: 0;
     padding: 0;
     font-family: "Rubik", sans-serif;
 }
-
+/* header */
 .container_principalHeader {
     width: 100vw;
     height: 8vh;
@@ -63,3 +64,66 @@
     display: flex;
     align-items: center;
 }
+
+/*  main */
+
+.container_view{
+    display: grid;
+    grid-template-columns: 0.2fr 0.8fr;
+}
+
+.listAside{
+    height: 92vh;
+}
+
+.store{
+    height: 92vh;
+    background-color: green;
+}
+
+/* list aside */
+.listAside{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.listAside h2{
+    display: flex;
+    font-size: 3vh;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+}
+
+.listAside ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 1vh;
+    margin-top:3vh ;
+}
+
+ .listAside ul li{
+    font-size:2vh ;
+    font-weight: 500;
+    padding: .4rem ;
+    border-radius: .4rem ;
+    cursor: pointer;
+ }
+
+.liActive{
+    background-color: #1e3f72;
+    color: white;
+    
+}
+
+
+
+
+
+
+
+
