@@ -82,16 +82,3 @@ export const handleRenderList= (productosIn)=>{
     addEvents(papas);
     addEvents(gaseosas);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

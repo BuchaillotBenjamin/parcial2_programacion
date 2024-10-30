@@ -35,8 +35,3 @@ buttonSearch.addEventListener("click",()=>{
 
     handleSearchProductByName();    
 })
-
-
-
-
-

@@ -33,14 +33,3 @@ export const setInLocalStorage= (productIn)=>{
     //set nuevo array
     localStorage.setItem("products",JSON.stringify(producsInLocal));
 };
-
-
-
-
-
-
-
-
-
-
-

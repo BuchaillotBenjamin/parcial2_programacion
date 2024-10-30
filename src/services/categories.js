@@ -77,9 +77,3 @@ export const renderCategories = () =>{
         })
     }
 }
-
-
-
-
-
-
