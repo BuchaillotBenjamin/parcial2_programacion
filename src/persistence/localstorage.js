@@ -30,8 +30,8 @@ export const setInLocalStorage= (productIn)=>{
         //si no agregarse
         producsInLocal.push(productIn);
     }
-
-    localStorage.setItem("products",json.parse(producsInLocal));
+    //set nuevo array
+    localStorage.setItem("products",JSON.stringify(producsInLocal));
 };
 
 
