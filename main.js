@@ -4,6 +4,12 @@ import { handleGetProductstoStore } from "./src/view/store";
 import './style.css'
 
 //aplicacion
+export let categoriaActiva=null;
+
+export const setCategoriaActiva= (categoriaIn)=>{
+    categoriaActiva=categoriaIn;
+}
+
 
 
 renderCategories();

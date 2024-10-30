@@ -115,6 +115,12 @@
     padding: .4rem;
     box-shadow: 2px 2px 5px 4px rgba(0, 0, 0, .3);
     border-radius: .4rem;
+    transition: .2s ease;
+}
+
+.containerTargetItem:hover{
+    cursor: pointer;
+    transform: scale(1.08);
 }
 
 .containerTargetItem h2{
@@ -172,6 +178,12 @@
     border-radius: .4rem ;
     cursor: pointer;
  }
+
+.listAside ul li:hover{
+    cursor: pointer;
+    background-color: #1e3f72;
+    color: white;
+}
 
 .liActive{
     background-color: #1e3f72;
