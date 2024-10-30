@@ -1,9 +1,13 @@
 import { setInLocalStorage } from "./src/persistence/localstorage";
 import { renderCategories } from "./src/services/categories";
+import { handleGetProductstoStore } from "./src/view/store";
 import './style.css'
 
+//aplicacion
 
-renderCategories()
+
+renderCategories();
+handleGetProductstoStore();
 
 /* product */
 const buttonAdd= document.getElementById("buttonAddElement")
@@ -61,7 +65,7 @@ const handleSaveOrModifyElements=()=>{
     };
 
     setInLocalStorage(object);
-    //closeModal();
+    closeModal();
 
 };
 
