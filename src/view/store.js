@@ -1,5 +1,6 @@
 //store
 
+import { openModal, setProductoActivo } from "../../main";
 import { handleGetProductsLocalStorage } from "../persistence/localstorage"
 
 //se encarga de traer los elementos y llamar al render
@@ -68,14 +69,16 @@ export const handleRenderList= (productosIn)=>{
             const productContainer= document.getElementById(`product-${element.categories}-${index}`)
 
             productContainer.addEventListener("click",()=>{
-                console.log("productoActivo ", element)
+                setProductoActivo(element);
+                openModal();
             })
         });
     }
 
     };
-
     addEvents(burgers);
+    addEvents(papas);
+    addEvents(gaseosas);
 }
 
 
