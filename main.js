@@ -65,6 +65,7 @@ const handleSaveOrModifyElements=()=>{
     };
 
     setInLocalStorage(object);
+    handleGetProductstoStore();
     closeModal();
 
 };
