@@ -1,4 +1,3 @@
-import { setInLocalStorage } from "./src/persistence/localstorage";
 import { renderCategories } from "./src/services/categories";
 import { handleSearchProductByName } from "./src/services/searchBar";
 import { openModal } from "./src/view/MODAL.JS";

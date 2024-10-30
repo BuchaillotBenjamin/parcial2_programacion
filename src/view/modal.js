@@ -1,6 +1,7 @@
 /* popup */
 
 import { productoActivo, setProductoActivo } from "../../main";
+import { handleDeleteProduct } from "../services/product";
 
 
 
@@ -16,6 +17,13 @@ export const openModal = ()=>{
 
     const modal= document.getElementById("modalPopUp");
     modal.style.display="flex";
+
+    if(productoActivo){
+        deleteButton.style.display="block";
+    }else{
+        deleteButton.style.display="none";
+
+    }
 
     if(productoActivo){
         const nombre= document.getElementById("name"),
@@ -50,5 +58,12 @@ const resetModal=()=>{
 
 }
 
+const deleteButton=document.getElementById("deleteButton");
+deleteButton.addEventListener("click",()=>{
+    handleButtonDelete();
+});
 
+const handleButtonDelete=()=>{
+    handleDeleteProduct();
+};
 

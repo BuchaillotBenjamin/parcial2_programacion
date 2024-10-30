@@ -1,8 +1,9 @@
 /* product */
 
-import { closeModal } from "../../main";
-import { setInLocalStorage } from "../persistence/localstorage";
-import { handleGetProductstoStore } from "../view/store";
+import { productoActivo } from "../../main";
+import { handleGetProductsLocalStorage, setInLocalStorage } from "../persistence/localstorage";
+import { closeModal } from "../view/MODAL.JS";
+import { handleGetProductstoStore, handleRenderList } from "../view/store";
 
 
 
@@ -49,3 +50,17 @@ const handleSaveOrModifyElements=()=>{
 
 };
 
+
+//eliminar elemento
+export const handleDeleteProduct=()=>{
+
+    console.log("eliminando")
+    const products=handleGetProductsLocalStorage();
+    const results=products.filter((el)=>el.id!=productoActivo.id);
+     
+    //set nuevo array
+    localStorage.setItem("products",JSON.stringify(results));
+    const newProducts= handleGetProductsLocalStorage();
+    handleRenderList(newProducts);
+    closeModal();
+}
